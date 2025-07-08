@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+brew install --cask wezterm
+brew install --cask font-jetbrains-mono-nerd-font
+
+brew install powerlevel10k
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
+
+brew install zsh-autosuggestions
+echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc
+
+brew install zsh-syntax-highlighting
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
+
+brew install eza
+
+brew install zoxide
+
+brew install fzf
+
+source ~/.zshrc
