@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
 
 brew install git
+
+git config --global user.name "seantanyurong"
+git config --global user.email "seantanyurong@gmail.com"
