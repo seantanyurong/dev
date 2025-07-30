@@ -57,12 +57,14 @@ return { -- Fuzzy Finder (files, lsp, etc)l
         ['ui-select'] = {
           require('telescope.themes').get_dropdown(),
         },
+        ['todo-comments'] = {},
       },
     }
 
     -- Enable Telescope extensions if they are installed
     pcall(require('telescope').load_extension, 'fzf')
     pcall(require('telescope').load_extension, 'ui-select')
+    pcall(require('telescope').load_extension, 'todo-comments')
 
     -- See `:help telescope.builtin`
     local builtin = require 'telescope.builtin'
@@ -76,6 +78,9 @@ return { -- Fuzzy Finder (files, lsp, etc)l
     vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
     vim.keymap.set('n', '<leader>s.', builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
     vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
+    vim.keymap.set('n', '<leader>sc', function()
+      require('telescope').extensions['todo-comments'].todo()
+    end, { desc = '[S]earch [C]omments' })
 
     -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set('n', '<leader>/', function()
