@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# How to use
+# ./run [filter] [--dry]
+# filter: a regular expression to filter the scripts to run
+# --dry: dry run
+# Remember to chmod +x your script in runs
+
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 filter="$1"
 dry="0"
