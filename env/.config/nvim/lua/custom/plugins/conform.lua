@@ -23,18 +23,23 @@ return { -- Autoformat
         return nil
       else
         return {
-          timeout_ms = 500,
+          timeout_ms = 1000,
           lsp_format = 'fallback',
         }
       end
     end,
+    formatters = {
+      prettier = {
+        prepend_args = { '--single-quote' },
+      },
+    },
     formatters_by_ft = {
       lua = { 'stylua' },
       python = { 'isort', 'black' },
-      javascript = { 'prettier' },
-      typescript = { 'prettier' },
-      javascriptreact = { 'prettier' },
-      typescriptreact = { 'prettier' },
+      javascript = { 'eslint_d' },
+      typescript = { 'eslint_d' },
+      javascriptreact = { 'eslint_d' },
+      typescriptreact = { 'eslint_d' },
       svelte = { 'prettier' },
       css = { 'prettier' },
       html = { 'prettier' },
