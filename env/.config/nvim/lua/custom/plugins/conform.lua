@@ -1,6 +1,6 @@
 return { -- Autoformat
   'stevearc/conform.nvim',
-  event = { 'BufWritePre' },
+  event = { 'BufReadPre', 'BufNewFile' },
   cmd = { 'ConformInfo' },
   keys = {
     {
@@ -23,7 +23,7 @@ return { -- Autoformat
         return nil
       else
         return {
-          timeout_ms = 1000,
+          timeout_ms = 2500,
           lsp_format = 'fallback',
         }
       end
@@ -36,19 +36,15 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       python = { 'isort', 'black' },
-      -- javascript = { 'eslint_d', 'prettier' },
-      -- typescript = { 'eslint_d', 'prettier' },
-      -- javascriptreact = { 'eslint_d', 'prettier' },
-      -- typescriptreact = { 'eslint_d', 'prettier' },
-      javascript = { 'prettier', 'eslint_d' },
-      typescript = { 'prettier', 'eslint_d' },
-      javascriptreact = { 'prettier', 'eslint_d' },
-      typescriptreact = { 'prettier', 'eslint_d' },
+      -- javascript = { 'prettier', 'eslint_d' },
+      -- typescript = { 'prettier', 'eslint_d' },
+      -- javascriptreact = { 'prettier', 'eslint_d' },
+      -- typescriptreact = { 'prettier', 'eslint_d' },
       svelte = { 'prettier' },
       css = { 'prettier' },
       html = { 'prettier' },
       json = { 'prettier' },
-      yaml = { 'prettier' },
+      -- yaml = { 'prettier' },
       markdown = { 'prettier' },
       graphql = { 'prettier' },
     },

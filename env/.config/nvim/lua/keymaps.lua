@@ -24,6 +24,15 @@ vim.keymap.set('n', '<leader>bi', '<cmd>bnext<cr>', { desc = 'Next buffer' })
 vim.keymap.set('n', '<leader>bo', '<cmd>bprevious<cr>', { desc = 'Previous buffer' })
 vim.keymap.set('n', '<leader>bd', '<cmd>bd<cr>', { desc = 'Delete buffer' })
 
+-- Oil
+vim.keymap.set('n', '<leader>o', '<cmd>Oil<cr>', { desc = 'Open file explorer' })
+
+-- NvimTree
+vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', { desc = 'Toggle file explorer' })
+
+-- Git
+vim.keymap.set('n', '<leader>g', '<cmd>Git<cr>', { desc = 'Open git panel' })
+
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
