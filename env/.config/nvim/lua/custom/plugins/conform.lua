@@ -36,6 +36,10 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       python = { 'isort', 'black' },
+      -- javascript = { 'eslint_d' },
+      -- typescript = { 'eslint_d' },
+      -- javascriptreact = { 'eslint_d' },
+      -- typescriptreact = { 'eslint_d' },
       -- javascript = { 'prettier', 'eslint_d' },
       -- typescript = { 'prettier', 'eslint_d' },
       -- javascriptreact = { 'prettier', 'eslint_d' },
