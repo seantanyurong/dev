@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Instructions
+# This script is used to set up a new laptop with my dev environment
+#
+# 1. Run ./dev-env
+# 2. Run ./dev-env --dry to see what it will do
+
 script_dir="$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)"
 dry="0"
 
