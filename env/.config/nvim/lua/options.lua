@@ -13,7 +13,7 @@ vim.g.loaded_netrwPlugin = 1
 -- Make line numbers default
 vim.o.number = true
 -- Relative line numbers
--- vim.o.relativenumber = true
+vim.o.relativenumber = true
 
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
