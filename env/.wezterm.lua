@@ -13,7 +13,7 @@ config.font_size = 15
 
 config.window_decorations = "RESIZE"
 
-config.window_background_opacity = 0.9
+config.window_background_opacity = 1
 config.macos_window_background_blur = 40
 
 config.leader = { key = "s", mods = "CTRL", timeout_milliseconds = 1000 }

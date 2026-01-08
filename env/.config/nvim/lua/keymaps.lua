@@ -27,6 +27,9 @@ vim.keymap.set('n', '<leader>bd', '<cmd>bd<cr>', { desc = 'Delete buffer' })
 -- Oil
 vim.keymap.set('n', '<leader>o', '<cmd>Oil<cr>', { desc = 'Open file explorer' })
 
+-- Toggleterm
+vim.keymap.set('n', '<leader>t', '<cmd>ToggleTerm<cr>', { desc = 'Open file explorer' })
+
 -- NvimTree
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', { desc = 'Toggle file explorer' })
 
