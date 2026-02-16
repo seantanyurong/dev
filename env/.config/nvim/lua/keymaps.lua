@@ -31,10 +31,15 @@ vim.keymap.set('n', '<leader>o', '<cmd>Oil<cr>', { desc = 'Open file explorer' }
 vim.keymap.set('n', '<leader>t', '<cmd>ToggleTerm<cr>', { desc = 'Open file explorer' })
 
 -- NvimTree
-vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>', { desc = 'Toggle file explorer' })
+vim.keymap.set('n', '<leader>f', '<cmd>NvimTreeToggle<cr>', { desc = 'Toggle file explorer' })
 
 -- Git
 vim.keymap.set('n', '<leader>g', '<cmd>Git<cr>', { desc = 'Open git panel' })
+
+-- Error Message
+vim.keymap.set('n', '<leader>e', function()
+  vim.diagnostic.open_float { bufnr = 0, scope = 'line' }
+end, { desc = 'Error message' })
 
 -- NOTE: Some terminals have colliding keymaps or are not able to send distinct keycodes
 -- vim.keymap.set("n", "<C-S-h>", "<C-w>H", { desc = "Move window to the left" })
