@@ -30,16 +30,16 @@ return { -- Autocompletion
       opts = {},
     },
     'folke/lazydev.nvim',
-    {
-      'supermaven-inc/supermaven-nvim',
-      opts = {
-        disable_inline_completion = true, -- disables inline completion for use with cmp
-        disable_keymaps = true, -- disables built in keymaps for more manual control
-      },
-    },
-    {
-      'huijiro/blink-cmp-supermaven',
-    },
+    -- {
+    --   'supermaven-inc/supermaven-nvim',
+    --   opts = {
+    --     disable_inline_completion = true, -- disables inline completion for use with cmp
+    --     disable_keymaps = true, -- disables built in keymaps for more manual control
+    --   },
+    -- },
+    -- {
+    --   'huijiro/blink-cmp-supermaven',
+    -- },
   },
   --- @module 'blink.cmp'
   --- @type blink.cmp.Config
@@ -85,14 +85,15 @@ return { -- Autocompletion
     },
 
     sources = {
-      default = { 'lsp', 'path', 'snippets', 'lazydev', 'supermaven' },
+      -- default = { 'lsp', 'path', 'snippets', 'lazydev', 'supermaven' },
+      default = { 'lsp', 'path', 'snippets', 'lazydev' },
       providers = {
         lazydev = { module = 'lazydev.integrations.blink', score_offset = 100 },
-        supermaven = {
-          name = 'supermaven',
-          module = 'blink-cmp-supermaven',
-          async = true,
-        },
+        -- supermaven = {
+        --   name = 'supermaven',
+        --   module = 'blink-cmp-supermaven',
+        --   async = true,
+        -- },
       },
     },
 
