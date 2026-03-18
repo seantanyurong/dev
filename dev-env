@@ -63,7 +63,7 @@ copy_dir env/.config $HOME/.config
 
 copy_file env/.wezterm.lua $HOME
 copy_file env/.zshrc $HOME
-# copy_file env/.env $HOME
+copy_file env/.env $HOME
 copy_file env/.zprofile $HOME
 
 # Copy karabiner from config to env
