@@ -18,11 +18,16 @@ This directory contains miscellaneous configs.
 
 1. install arc
 2. install brew via terminal
-3. install notion
-4. install moom
-5. install raycast - port over config
-6. install telegram
-7. install whatsapp
+3. install software
+
+- notion
+- raycast - port over config
+- telegram
+- whatsapp
+- cleanshot (add license)
+- moom (add license)
+- ice
+
 8. install devtools from terminal
 9. clone this repo
 10. run ./run
