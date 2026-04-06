@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Uncomment if you want to use the .env file
-# source ~/.env
+source ~/.env
 
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
@@ -49,6 +49,7 @@ alias ls="eza --icons=always"
 eval "$(zoxide init zsh)"
 alias cd="z"
 alias cdi="zi"
+alias python=python3
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)

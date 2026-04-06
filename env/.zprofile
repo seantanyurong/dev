@@ -13,10 +13,11 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Added by `rbenv init` on Wed Aug 13 12:19:13 +08 2025
 # eval "$(rbenv init - --no-rehash zsh)"
-
-# export ANTHOROPIC_API_KEY=''
-# Constructor Claude Code
-# export CLAUDE_CODE_USE_BEDROCK=1
-# export ANTHROPIC_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/u1lsg1xm57m9"
-# export CLAUDE_CODE_SUBAGENT_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/u1lsg1xm57m9"
-# export ANTHROPIC_SMALL_FAST_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/yds5q6de5r8c"
+#
+export AWS_PROFILE="ChapterIntegrationsGeneral-073865013699"
+export CLAUDE_CODE_USE_BEDROCK=1
+export ANTHROPIC_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/72ivfjakk4kp"
+export ANTHROPIC_DEFAULT_OPUS_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/72ivfjakk4kp"
+export ANTHROPIC_DEFAULT_SONNET_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/okx9pm62c6rz"
+export ANTHROPIC_DEFAULT_HAIKU_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/yds5q6de5r8c"
+export CLAUDE_CODE_SUBAGENT_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/okx9pm62c6rz"
