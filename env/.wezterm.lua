@@ -8,7 +8,7 @@ local config = wezterm.config_builder()
 
 config.color_scheme = "Tokyo Night"
 
-config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font = wezterm.font("JetBrains Mono")
 config.font_size = 15
 
 config.window_decorations = "RESIZE"
