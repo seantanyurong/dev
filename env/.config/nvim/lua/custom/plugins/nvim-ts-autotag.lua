@@ -1,3 +1,4 @@
+-- To autoclose tags
 return {
   'windwp/nvim-ts-autotag',
   event = 'InsertEnter',

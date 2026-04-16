@@ -1,3 +1,4 @@
+-- For superior folding
 return {
   'kevinhwang91/nvim-ufo',
   dependencies = {

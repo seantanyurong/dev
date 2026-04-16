@@ -22,10 +22,6 @@ rtp:prepend(lazypath)
 -- NOTE: Plugins
 require('lazy').setup({
   { import = 'custom.plugins' },
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
-  -- require 'kickstart.plugins.neo-tree',
-  -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
