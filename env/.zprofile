@@ -15,7 +15,7 @@ export PATH="$HOME/.local/bin:$PATH"
 # eval "$(rbenv init - --no-rehash zsh)"
 
 # Constructor Macbook hostname
-if [["$(hostname -s)" == "sean"]]; then
+if [[ "$(hostname -s)" == "sean" ]]; then
   export AWS_PROFILE="ChapterIntegrationsGeneral-073865013699"
   export CLAUDE_CODE_USE_BEDROCK=1
   export ANTHROPIC_MODEL="arn:aws:bedrock:us-east-1:073865013699:application-inference-profile/72ivfjakk4kp"
