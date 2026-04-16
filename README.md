@@ -32,4 +32,5 @@ This directory contains miscellaneous configs.
 9. clone this repo
 10. run ./run
 11. run ./dev-env
-12. accept all the permissions for karabiner, etc.
+12. :TSInstall all in nvim to install all languages
+13. accept all the permissions for karabiner, etc.

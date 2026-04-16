@@ -13,13 +13,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -53,7 +46,6 @@ alias python=python3
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
-
 
 # This is what gets added from running the source >> stuff in wezterm setup
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
