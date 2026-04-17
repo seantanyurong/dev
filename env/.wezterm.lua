@@ -6,12 +6,13 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
-config.color_scheme = "Tokyo Night"
+config.color_scheme = "Catppuccin Macchiato"
 
 config.font = wezterm.font("JetBrains Mono")
 config.font_size = 15
 
 config.window_decorations = "RESIZE"
+config.enable_tab_bar = false
 
 config.window_background_opacity = 1
 config.macos_window_background_blur = 40
