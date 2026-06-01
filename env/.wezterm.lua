@@ -6,6 +6,8 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
+config.term = "wezterm"
+
 config.color_scheme = "Catppuccin Macchiato"
 
 config.font = wezterm.font("JetBrains Mono")
