@@ -70,6 +70,9 @@ config.keys = {
 	move_pane("k", "Up"),
 	move_pane("h", "Left"),
 	move_pane("l", "Right"),
+	{ key = "{", mods = "LEADER", action = wezterm.action.RotatePanes("CounterClockwise") },
+	{ key = "}", mods = "LEADER", action = wezterm.action.RotatePanes("Clockwise") },
+	{ key = "s", mods = "LEADER", action = wezterm.action.PaneSelect({ mode = "SwapWithActive" }) },
 	{
 		-- When we push LEADER + R...
 		key = "r",
